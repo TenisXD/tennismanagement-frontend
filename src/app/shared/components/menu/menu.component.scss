@@ -1,0 +1,33 @@
+@import "src/styles";
+
+.menu-container {
+  height: 70px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $tennis-grey;
+}
+
+.logo-container {
+  height: 100%;
+  img {
+    height: 100%;
+  }
+}
+
+.menu-items-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  color: $tennis-green;
+  margin: 0 10px;
+  cursor: pointer;
+}

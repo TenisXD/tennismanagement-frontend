@@ -1,1 +1,73 @@
 /* You can add global styles to this file, and also import other style files */
+
+$tennis-green: #A7CC1C;
+$tennis-orange: #E3783B;
+$tennis-grey: #F5F5F5;
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.heading {
+  font-size: 35px;
+  @media screen and (max-width: 1200px) {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
+}
+
+.large-text {
+  font-size: 25px;
+  @media screen and (max-width: 1200px) {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 15px;
+  }
+}
+
+.big-text {
+  font-size: 20px;
+  @media screen and (max-width: 1200px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
+}
+
+.medium-text {
+  font-size: 18px;
+  @media screen and (max-width: 1200px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+  }
+}
+
+.small-text {
+  font-size: 15px;
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 750px) {
+    font-size: 10px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 8px;
+  }
+}
