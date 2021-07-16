@@ -10,12 +10,12 @@ import {Router, RouterModule} from "@angular/router";
 export class MenuComponent implements OnInit {
   menuItems: MenuItem[] = [
     {
-      name: 'Home',
+      name: 'Acasă',
       link: '',
       icon: 'home'
     },
     {
-      name: 'Articles',
+      name: 'Articole',
       link: 'articles',
       icon: 'article'
     },
@@ -25,19 +25,22 @@ export class MenuComponent implements OnInit {
       icon: 'contact_page'
     },
     {
-      name: 'Players',
+      name: 'Jucători',
       link: 'players',
       icon: 'sports_tennis'
     }
   ];
+  selectedItem: MenuItem = this.menuItems[0];
+  screenWidth: number;
 
   constructor(private readonly router: Router) { }
 
   ngOnInit(): void {
+    this.screenWidth = window.innerWidth;
   }
 
   async navigate(item?: MenuItem): Promise<void> {
+    this.selectedItem = item ? item : this.menuItems[0];
     await this.router.navigate([item ? item.link : '']);
   }
-
 }

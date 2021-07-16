@@ -5,19 +5,19 @@ const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: () => import('./pages/home-page/home-page.module')
+    loadChildren: () => import('./pages/home-page/home-page.module').then(m => m.HomePageModule)
   },
   {
     path: 'contact',
-    loadChildren: () => import('./pages/contact-page/contact-page.module')
+    loadChildren: () => import('./pages/contact-page/contact-page.module').then(m => m.ContactPageModule)
   },
   {
     path: 'articles',
-    loadChildren: () => import('./pages/articles-page/articles-page.module')
+    loadChildren: () => import('./pages/articles-page/articles-page.module').then(m => m.ArticlesPageModule)
   },
   {
     path: 'players',
-    loadChildren: () => import('./pages/players-page/players-page.module')
+    loadChildren: () => import('./pages/players-page/players-page.module').then(m => m.PlayersPageModule)
   }
 ];
 

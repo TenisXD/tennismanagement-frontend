@@ -7,7 +7,9 @@ import {PlayersPageComponent} from './players-page.component';
 const routes: Routes = [{path: '', component: PlayersPageComponent}];
 
 @NgModule({
-  declarations: [PlayersPageComponent],
+  declarations: [
+    PlayersPageComponent
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),

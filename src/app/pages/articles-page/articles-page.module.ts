@@ -7,7 +7,9 @@ import {SharedModule} from '../../shared/shared.module';
 const routes: Routes = [{path: '', component: ArticlesPageComponent}];
 
 @NgModule({
-  declarations: [ArticlesPageComponent],
+  declarations: [
+    ArticlesPageComponent
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
