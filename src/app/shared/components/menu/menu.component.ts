@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {MenuItem} from '../../../models/menu-item';
-import {Router, RouterModule} from "@angular/router";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss']
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
   menuItems: MenuItem[] = [
     {
       name: 'Acasă',
@@ -33,10 +33,13 @@ export class MenuComponent implements OnInit {
   selectedItem: MenuItem = this.menuItems[0];
   screenWidth: number;
 
-  constructor(private readonly router: Router) { }
-
-  ngOnInit(): void {
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(): void {
     this.screenWidth = window.innerWidth;
+  }
+
+  constructor(private readonly router: Router) {
+    this.getScreenSize();
   }
 
   async navigate(item?: MenuItem): Promise<void> {

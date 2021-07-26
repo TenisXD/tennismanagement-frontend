@@ -8,7 +8,16 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
   background-color: $tennis-grey;
+}
+
+.bottom-menu {
+  top: auto;
+  bottom: 0;
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+  }
 }
 
 .logo-container {
@@ -36,6 +45,9 @@
 }
 
 .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: $tennis-green;
   margin: 0 13px;
   cursor: pointer;
@@ -58,4 +70,26 @@ p {
   .menu-container {
     height: 50px;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .menu-items-container {
+    margin-right: 0;
+  }
+  .menu-item {
+    mat-icon {
+      font-size: 30px;
+    }
+    margin: 0 30px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .menu-item {
+    mat-icon {
+      font-size: 27px;
+    }
+    margin: 0 15px;
+  }
+
 }

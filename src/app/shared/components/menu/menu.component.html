@@ -1,5 +1,5 @@
-<div class="menu-container">
-  <div class="logo-container">
+<div class="menu-container" [ngClass]="{'bottom-menu': screenWidth <= 600}">
+  <div *ngIf="screenWidth > 600" class="logo-container">
     <img src="assets/images/logo.png" alt="logo" (click)="navigate()">
   </div>
   <div class="menu-items-container">
@@ -8,7 +8,8 @@
          (click)="navigate(menuItem)"
          [class.selected]="menuItem === selectedItem"
     >
-      <p class="large-text" *ngIf="screenWidth > 768">{{menuItem.name}}</p>
+      <p class="large-text" *ngIf="screenWidth > 600">{{menuItem.name}}</p>
+      <mat-icon *ngIf="screenWidth <= 600">{{menuItem.icon}}</mat-icon>
     </div>
   </div>
 </div>
