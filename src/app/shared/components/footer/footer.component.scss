@@ -7,17 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (max-width: 1200px) {
-    height: 200px;
-  }
-  @media screen and (max-width: 750px) {
-    height: 150px;
-  }
   @media screen and (max-width: 600px) {
     margin-bottom: 60px;
-  }
-  @media screen and (max-width: 480px) {
-    height: 120px;
   }
 }
 
@@ -28,21 +19,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   img {
     height: 60%;
   }
-
   color: $tennis-green;
-  @media screen and (max-width: 1200px) {
-    margin: 0 45px;
-  }
-  @media screen and (max-width: 750px) {
-    margin: 0 40px;
-  }
-  @media screen and (max-width: 480px) {
-    margin: 0 20px;
-  }
 }
 
 a {
@@ -51,13 +31,38 @@ a {
 
 p {
   margin: 10px 0;
-  @media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-container {
+    height: 200px;
+  }
+  .content {
+    margin: 0 45px;
+  }
+  p {
     margin: 7px 0;
   }
-  @media screen and (max-width: 750px) {
+}
+@media screen and (max-width: 750px) {
+  .footer-container {
+    height: 150px;
+  }
+  .content {
+    margin: 0 40px;
+  }
+  p {
     margin: 5px 0;
   }
-  @media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 480px) {
+  .footer-container {
+    height: 120px;
+  }
+  .content {
+    margin: 0 20px;
+  }
+  p {
     margin: 2px 0;
   }
 }

@@ -1,0 +1,25 @@
+@import "src/styles";
+
+.button {
+  background-color: white;
+  color: $tennis-orange;
+  border: 2px solid $tennis-orange;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover:enabled {
+  background-color: $tennis-green;
+  color: $tennis-grey;
+  border: 2px solid $tennis-grey;
+}
+
+.button:disabled {
+  color: gray;
+  background-color: lightgray;
+  border: none;
+}
+
+p {
+  margin: 10px 0;
+}
