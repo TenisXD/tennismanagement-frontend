@@ -45,6 +45,7 @@
 }
 
 .menu-item {
+  width: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,6 +68,9 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
+  .menu-item {
+    width: 50px;
+  }
   .menu-container {
     height: 50px;
   }
@@ -77,6 +81,7 @@ p {
     margin-right: 0;
   }
   .menu-item {
+    width: 30px;
     mat-icon {
       font-size: 30px;
     }
