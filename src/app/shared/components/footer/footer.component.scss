@@ -1,0 +1,64 @@
+@import "src/styles";
+
+.footer-container {
+  margin-top: 100px;
+  background-color: $tennis-grey;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 1200px) {
+    height: 200px;
+  }
+  @media screen and (max-width: 750px) {
+    height: 150px;
+  }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 480px) {
+    height: 120px;
+  }
+}
+
+.content {
+  margin: 0 50px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 60%;
+  }
+
+  color: $tennis-green;
+  @media screen and (max-width: 1200px) {
+    margin: 0 45px;
+  }
+  @media screen and (max-width: 750px) {
+    margin: 0 40px;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 0 20px;
+  }
+}
+
+a {
+  color: $tennis-orange;
+}
+
+p {
+  margin: 10px 0;
+  @media screen and (max-width: 1200px) {
+    margin: 7px 0;
+  }
+  @media screen and (max-width: 750px) {
+    margin: 5px 0;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 2px 0;
+  }
+}
